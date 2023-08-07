@@ -1,0 +1,5 @@
+file = open('original_text.txt', 'r')
+calc_line = file.readlines()
+n_lines = len(calc_line)
+file.close()
+print(n_lines)
