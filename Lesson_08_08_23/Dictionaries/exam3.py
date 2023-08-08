@@ -14,10 +14,21 @@ for key, value in dictionaries.items():
     print(f'{key}: {value}') 
     
     #Options two        
-    print(key, ':', value)         
-        
-check_dict("age", "country")                 
-# print(dictionaries)
+    print(key, ':', value) 
+    
+list_keys = list(dictionaries.keys())            
+list_values = list(dictionaries.values()) 
+
+# List one printing
+print(f'List of keys {list_keys}')           
+print(f'List of values {list_values}')   
+
+
+#list two printing
+print("List of keys:", list_keys)           
+print("List of values:", list_values)         
+       
+check_dict("country")                 
 
 
 
