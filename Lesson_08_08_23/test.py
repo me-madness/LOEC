@@ -7,8 +7,8 @@ for x in my_list:
         my_list.remove(x)
 print*(my_list)            
           
-for i in range(min(my_list), max(my_list)+1)          
-remove.number(i)
+for i in range(min(my_list), max(my_list)+1):          
+    # remove_number(i)
 
 list1 = [1, 2, 3]
 list2 = list1.copy()
