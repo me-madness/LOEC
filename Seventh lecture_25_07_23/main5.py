@@ -1,14 +1,15 @@
 import sys
 import csv
 
-new_file_open = 'histogram.txt'
-new_file_open_two = 'original_text.txt'
+new_file_open_one = 'original_text.txt'
+new_file_open_two = 'histogram.txt'
 max_value = 10000000000000
+new_max_value = ''
 histogram = {}
 
 
 try:
-    with open(new_file_open_two, 'r') as file:
+    with open(new_file_open_one, 'r') as file:
         # sys.stdout = file
         reading = file.read()
         for x in reading:
@@ -24,22 +25,23 @@ finally:
     
     
 try:
-    with open(new_file_open, "w") as new_file:
+    with open(new_file_open_two, "w") as new_file:
         csv.reader = csv.reader(new_file)
         for key, val in histogram.items():
-           for num in val:
-                vals = num.strip().split('\n')  
-                if vals < max_value:
-                    max_value = vals
-                     
-            # for val in sorted(histogram.keys()):
-            #     print(f"Count of the symbols='{val}' is {histogram[val]}")                
-                    
-                    count_two = f"Count of the max value= '{vals}' : {key}" + f"Count of the key= '{key}' : {val}\n"
-                    new_file.write(count_two) 
-                print(str(max_value)) 
+        #    for num in val:
+        #         vals = num.strip().split('\n')  
+        #         if vals < max_value:
+        #             max_value = vals          
+            for val in sorted(histogram.keys()):
+                    # print(f"Count of the symbols='{val}' is {histogram[val]}")
+                    if val < str(max_value):
+                        new_max_value = str(val)               
+                        count_two = f"Count of the max value= '{new_max_value}'\n"
+                        # " : {key}" + f"Count of the key= '{key}' : {val}"
+                        new_file.write(count_two) 
+                        print(str(new_max_value)) 
 except FileNotFoundError:
     print("File not found!")
 finally:       
     new_file.close()
-    print(new_file_open)               
+    print(new_file_open_one)               
