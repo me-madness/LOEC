@@ -97,18 +97,23 @@
 # check_presence(8)                      
 # check_presence(9)   
                    
-# 7. Seven task count the occurrences 
+# # 7. Seven task count the occurrences 
 
-empty_list = [1, 3, 5, 1, 3, 5, 8, 4, 3, 5, 1, 3, 5, 8, 6, 5, 8, 6 ]
-first = empty_list.count(3)   
-second = empty_list.count(5) 
-print(f'empty_list contains {first} "value 3" element')  
-print(f'empty_list contains {second} "value 5" element')  
+# # First option
+# empty_list = [1, 3, 5, 1, 3, 5, 8, 4, 3, 5, 1, 3, 5, 8, 6, 5, 8, 6 ]
+# first = empty_list.count(3)   
+# second = empty_list.count(5) 
+# print(f'empty_list contains {first} "value 3" element')  
+# print(f'empty_list contains {second} "value 5" element')  
+# # First option
+# 5 in empty_list
+# empty_list.count(3,5) != 0
 
 # # 8. Eighth task find the index 
 
-# empty_list = [1, 3, 5, 8, 6, 5, 6, 2, 5]
-# empty_list.index()
+empty_list = [1, 3, 5, 8, 6, 5, 6, 2, 5]
+first = empty_list.index(5)
+second = empty_list.index()
 
 # # 9. Ninth task  reverse the order
 
