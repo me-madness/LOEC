@@ -57,33 +57,50 @@
 empty_list = [1, 3, 5, 8, 6]
 # # 6.1 First Way
 # print("Please, enter a number")
-# try:
-#     a = int(input()) 
-#     if a in empty_list:
-#         print(a, "exists")
-#     else:
-#         print(a, "Does not exist")     
-# except:   
-#     print('Your input is not correct')    
-# 6.2 Second Way    
-print("Please, enter a number")
-while True:
-    try:
-        a = int(input()) 
-        break   
-    except:
-        print('Your input is not correct')  
-
-
-if a in empty_list:
-    print(a, "exists")
-else:
-    print(a, "Does not exist")              
+# a = int(input()) 
+#    if a in empty_list:
+#        print(a, "exists")
+#    else:
+#        print(a, "Does not exist")         
+# # 6.2 Second Way    
+# print("Please, enter a number")
+# while True:
+#     try:
+#         a = int(input()) 
+#         break   
+#     except:
+#         print('Your input is not correct')  
+# if a in empty_list:
+#     print(a, "exists")
+# else:
+#     print(a, "Does not exist")
     
+# # 6.3 Third way 
+# print("Please, enter a number")
+# value = int(input())                  
+# if value in empty_list:
+#     print(f'{value} is presented in the list')
+# else:
+#     print(f'{value} is  not presented in the list')
+    
+# # 6.4 Forth way         
+# print("Please, enter a number")
+# value_check = []   
+# def check_presence(value_check):               
+#     for value in value_check:
+#         if value == empty_list:
+#             print(f'{value} is presented in the list')
+#         else:
+#             print(f'{value} is  not presented in the list') 
+
+# check_presence(1)                      
+# check_presence(8)                      
+# check_presence(9)   
+                   
 # 7. Seven task count the occurrences 
 
-# empty_list = [1, 3, 5, 1, 3, 5, 8, 4, 3, 5, 1, 3, 5, 8, 6, 5, 8, 6 ]
-# empty_list.count()   
+empty_list = [1, 3, 5, 1, 3, 5, 8, 4, 3, 5, 1, 3, 5, 8, 6, 5, 8, 6 ]
+empty_list.count()   
 
 # # 8. Eighth task find the index 
 
