@@ -143,15 +143,16 @@
 
 # # 12. Twelve task  clear all elements
 
-empty_list = [1, 3, 5, 8, 6, 9, 0 ]
-new_list = empty_list.clear()
-print(new_list)
+# empty_list = [1, 3, 5, 8, 6, 9, 0 ]
+# new_list = empty_list.clear()
+# print(new_list)
 
 # # 13. Thirteen task  create a copy of the list 
 
-# empty_list_two = 0
-# empty_list_two.copy(empty_list)
-# empty_list = []
+empty_list = [1, 3, 5, 8, 6, 9, 0 ]
+empty_list_two = []
+empty_list_two.copy(empty_list)
+print(empty_list_two)
 
 # # 14. Fourteen task concatenate two lists 
 
