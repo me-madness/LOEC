@@ -54,7 +54,7 @@
 
 # 6. Sixth task check if an element exists 
 
-empty_list = [1, 3, 5, 8, 6]
+# empty_list = [1, 3, 5, 8, 6]
 # # 6.1 First Way
 # print("Please, enter a number")
 # a = int(input()) 
@@ -100,7 +100,10 @@ empty_list = [1, 3, 5, 8, 6]
 # 7. Seven task count the occurrences 
 
 empty_list = [1, 3, 5, 1, 3, 5, 8, 4, 3, 5, 1, 3, 5, 8, 6, 5, 8, 6 ]
-empty_list.count()   
+first = empty_list.count(3)   
+second = empty_list.count(5) 
+print(f'empty_list contains {first} "value 3" element')  
+print(f'empty_list contains {second} "value 5" element')  
 
 # # 8. Eighth task find the index 
 
