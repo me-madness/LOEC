@@ -111,19 +111,25 @@
 
 # # 8. Eighth task find the index 
 
-empty_list = [1, 3, 5, 8, 6, 5, 6, 2, 5]
-first = empty_list.index(5)
-second = empty_list.index()
-
+# empty_list = [1, 3, 5, 8, 6, 5, 6, 2, 5]
+# first = empty_list.index(5)
+# second = empty_list.index()
+# if first != True:
+#     print(f'{first} Index is not in the List')
+# else:
+#     print(f'{first} index is exist in the List')    
+     
 # # 9. Ninth task  reverse the order
 
 # empty_list = [1, 3, 5, 8, 6, 5, 6, 2, 5]
 # empty_list.reverse()
+# list(reversed(empty_list))
+# print(empty_list)
 
 # # 10. Tenth task sort the list
 
-# empty_list = [1, 3, 5, 8, 6, 9, 0]
-# empty_list.sort()
+empty_list = [1, 3, 5, 8, 6, 9, 0]
+empty_list.sort()
 
 # # 11. Eleventh task remove elements
 
