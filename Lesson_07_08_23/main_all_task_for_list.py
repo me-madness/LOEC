@@ -123,24 +123,29 @@
 
 # empty_list = [1, 3, 5, 8, 6, 5, 6, 2, 5]
 # empty_list.reverse()
-# list(reversed(empty_list))
 # print(empty_list)
+# ','.join(str(i) for i in reversed(empty_list))
+# list(reversed(empty_list))
 
 # # 10. Tenth task sort the list
 
-empty_list = [1, 3, 5, 8, 6, 9, 0]
-empty_list.sort()
+# empty_list = [1, 3, 5, 8, 6, 9, 0]
+# new_list = empty_list.sort()
+# print(empty_list)
+# print(sorted(empty_list))
 
 # # 11. Eleventh task remove elements
 
 # empty_list = [1, 3, 5, 8, 6, 9, 0]
-# empty_list.remove()
-# empty_list.pop()
+# first_list = empty_list.remove(1)
+# second_list = empty_list.pop(1)
+# print(empty_list)
 
 # # 12. Twelve task  clear all elements
 
-# empty_list = [1, 3, 5, 8, 6, 9, 0 ]
-# empty_list.clear()
+empty_list = [1, 3, 5, 8, 6, 9, 0 ]
+new_list = empty_list.clear()
+print(new_list)
 
 # # 13. Thirteen task  create a copy of the list 
 
