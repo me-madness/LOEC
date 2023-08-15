@@ -1,4 +1,3 @@
-from numpy import array
 import numpy as np
 
 table_one_list = [[6, 4, 3, 2],
