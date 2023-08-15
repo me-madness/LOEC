@@ -25,14 +25,16 @@
 
 # 4. Fourth task Iterate to the list
 
-# # # First option
+# # 4.1 First option
 # empty_list = [5, 4, 1.1, 1.5, 1.7, 13, 4, 6]
 # for i in empty_list:
 #     print(f"{i} is the list element")
-#     print(i, "is the list element")
-# # Second option    
+# # 4.2 Second option    
 # for i in range(8):    
 #     print(empty_list[i], "is the list element")
+# # 4.3 Third way
+# for i in empty_list:
+#     print(i, "is the list element")
     
     
 # 5. Fifth task find the length to the LIst  
@@ -42,7 +44,7 @@
 # len(empty_list)
 # print(empty_list)
 # print(empty_list.len())
-# # 5.2 Second Way
+# 5.2 Second Way
 # for i in range(len(empty_list)):    
 #      print(f"{i} is the list element")
 #      print(i, "is the list element")    
@@ -85,17 +87,27 @@
     
 # # 6.4 Forth way         
 # print("Please, enter a number")
-# ws  
+# value_check = []   
+# def check_presence(value_check):               
+#     for value in value_check:
+#         if value == empty_list:
+#             print(f'{value} is presented in the list')
+#         else:
+#             print(f'{value} is  not presented in the list') 
+
+# check_presence(1)                      
+# check_presence(8)                      
+# check_presence(9)  
                    
 # # 7. Seven task count the occurrences 
 
-# # First option
+# # 7.1 First option
 # empty_list = [1, 3, 5, 1, 3, 5, 8, 4, 3, 5, 1, 3, 5, 8, 6, 5, 8, 6 ]
 # first = empty_list.count(3)   
 # second = empty_list.count(5) 
 # print(f'empty_list contains {first} "value 3" element')  
 # print(f'empty_list contains {second} "value 5" element')  
-# # Second option
+# # 7.2 Second option
 # 5 in empty_list
 # empty_list.count(3,5) != 0
 
@@ -110,9 +122,11 @@
      
 # # 9. Ninth task  reverse the order
 
+# # 9.1 First way
 # empty_list = [1, 3, 5, 8, 6, 5, 6, 2, 5]
 # empty_list.reverse()
 # print(empty_list)
+# # 9.2 Second way
 # ','.join(str(i) for i in reversed(empty_list))
 # list(reversed(empty_list))
 
@@ -152,13 +166,13 @@
 
 # # 15. Fifteen task use list comprehension
 
-# First way
+# 15.1 First way
 # empty_list = [1, 3, 5, 8, 6, 9, 0 ]
 # squares_list = []
 # for i in empty_list:
 #     squares_list = i ** 2
 #     print(squares_list)
-# Second way
+# 15.2 Second way
 # empty_list = [1, 3, 5, 8, 6, 9, 0 ]
 # new_list = [x**2 for x in empty_list]
 # print(new_list)    
@@ -205,5 +219,3 @@
 # empty_list = [1, 2, 2, 3, 4, 3, 5, 6, 6, 1]
 # empty_list = list(set(empty_list))
 # print(empty_list)
-# empty_list.remove()   
-    
