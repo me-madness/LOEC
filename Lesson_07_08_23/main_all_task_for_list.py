@@ -1,4 +1,6 @@
-# 1. First task create List
+# # All task for Lists
+
+# # 1. First task create List
 
 # empty_list = [3, 'words', 33, 2.5]
 # empty_list = []
@@ -7,14 +9,14 @@
 # empty_list.extend([33, 2.5])
 # print(empty_list)
 
-# 2. Second task Access to the List
+# # 2. Second task Access to the List
 
 # empty_list = [4, 5, 21, 2.15, 2, 2.5, 7, 11]
 # print(empty_list[1])
 # print(empty_list[-3])
 
 
-# 3. Third task slice to the List
+# # 3. Third task slice to the List
 
 # empty_list = [5, 4, 1.1, 1.5, 1.7, 13, 4, 6]
 # print(empty_list[1:(-3+1)])
@@ -23,7 +25,7 @@
 # print(empty_list[2::2])
 # empty_list = empty_list.slice(-3, 6, -1)
 
-# 4. Fourth task Iterate to the list
+# # 4. Fourth task Iterate to the list
 
 # # 4.1 First option
 # empty_list = [5, 4, 1.1, 1.5, 1.7, 13, 4, 6]
@@ -37,7 +39,7 @@
 #     print(i, "is the list element")
     
     
-# 5. Fifth task find the length to the LIst  
+# # 5. Fifth task find the length to the LIst  
 
 # # 5.1 First way
 # empty_list = [5, 4, 1.1, 1.5, 1.7, 13, 4, 6]
@@ -54,7 +56,7 @@
 #          length += 1
 # print(length) 
 
-# 6. Sixth task check if an element exists 
+# # 6. Sixth task check if an element exists 
 
 # empty_list = [1, 3, 5, 8, 6]
 # # 6.1 First Way
@@ -122,7 +124,7 @@
      
 # # 9. Ninth task  reverse the order
 
-# # 9.1 First way
+# 9.1 First way
 # empty_list = [1, 3, 5, 8, 6, 5, 6, 2, 5]
 # empty_list.reverse()
 # print(empty_list)
@@ -166,13 +168,13 @@
 
 # # 15. Fifteen task use list comprehension
 
-# 15.1 First way
+# # 15.1 First way
 # empty_list = [1, 3, 5, 8, 6, 9, 0 ]
 # squares_list = []
 # for i in empty_list:
 #     squares_list = i ** 2
 #     print(squares_list)
-# 15.2 Second way
+# # 15.2 Second way
 # empty_list = [1, 3, 5, 8, 6, 9, 0 ]
 # new_list = [x**2 for x in empty_list]
 # print(new_list)    
