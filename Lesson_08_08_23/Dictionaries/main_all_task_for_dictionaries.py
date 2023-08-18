@@ -180,6 +180,7 @@ dictionaries = {'Alice': 85,
                 'Bob': 90,
                 'Charlie': 78,
                 'David': 92}
+
 # Return the last one key
 new_dictionaries = dictionaries.popitem()
 print(new_dictionaries)
