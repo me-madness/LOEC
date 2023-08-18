@@ -13,10 +13,10 @@
 
 # dictionaries = {'name': 'John', 'age': 35, 'city': 'New York', 'email': 'john@example.com'}
 
-# dict1 = dictionaries['name']
+# dictionaries = dictionaries['name']
 # dict2 = dictionaries['email']
 
-# print(f'name: {dict1}')
+# print(f'name: {dictionaries}')
 # print(f'email: {dict2}')
            
 # # 3. Third task Check if a key exists
@@ -118,32 +118,83 @@
 
 # # 9. Ninth task Update or add new key-value pairs
 
-dictionaries = {}
+dictionaries = {"name": "John",
+                  "age": 30,
+                  "city": "New Your",
+                  "email": "john@example.com"}
 
 # # 10. Tenth task Access values
 
-dictionaries = {}
+dictionaries = {"name": "John",
+                  "age": 30,
+                  "city": "New Your",
+                  "email": "john@example.com"}
 
 # # 11. Eleventh task Dictionary comprehension 
 
-dictionaries = {}
+dictionaries = {'Alice': 85,
+                'Bob': 90,
+                'Charlie': 78,
+                'David': 92}
+
+# # 11.1 First option
+dictionaries2 = {}
+for k,v in dictionaries.items():
+    dictionaries2[k] = v / 100
+print(dictionaries2)    
+# # 11.2 Second option
+dictionaries3 = {k: v / 100 for k,v in dictionaries.items()}
+print(dictionaries3)
 
 # # 12. Twelve task Use the pop() 
 
-dictionaries = {}
+dictionaries = {'Alice': 85,
+                'Bob': 90,
+                'Charlie': 78,
+                'David': 92}
+# remove the last one
+dictionaries.pop()
+print(dictionaries)
 
 # # 13. Thirteen task Use the popitem()
-dictionaries = {}
+
+dictionaries = {'Alice': 85,
+                'Bob': 90,
+                'Charlie': 78,
+                'David': 92}
+# remove the last one
+dictionaries.popitem()
+print(dictionaries)
 
 # # 14. Fourteen task Use the clear()
-dictionaries = {}
+
+dictionaries = {'Alice': 85,
+                'Bob': 90,
+                'Charlie': 78,
+                'David': 92}
+
+dictionaries.clear()
+print(dictionaries)
 
 # # 15. Fifteen task Use the copy()
-dictionaries = {}
+
+dictionaries = {'Alice': 85,
+                'Bob': 90,
+                'Charlie': 78,
+                'David': 92}
 
 # # 16. Sixteen task Use the update()
-dictionaries = {}
+
+dictionaries_one = {'a': 1, 'b': 2, 'c': 3}
+dictionaries_two = {'b': 4, 'd': 5, 'e': 6}
+# # 16.1 First Way
+print(dictionaries_one + dictionaries_two)
+# # 16.2 Second Way
+dictionaries_three = dictionaries_one + dictionaries_two
+print(dictionaries_three)
 
 # # 17. Seventeen task Use the dict()
-dictionaries = {}
 
+dictionaries = {('a', 1), ('b', 2), ('c', 3)}
+result = dict(dictionaries)
+print(result)
