@@ -118,17 +118,27 @@
 
 # # 9. Ninth task Update or add new key-value pairs
 
-dictionaries = {"name": "John",
-                  "age": 30,
-                  "city": "New Your",
-                  "email": "john@example.com"}
+# dictionaries = {"name": "John",
+#                   "age": 30,
+#                   "city": "New Your",
+#                   "email": "john@example.com"}
+
+# new_dictionaries = {"nickname": "Horse"}
+# dictionaries.update(new_dictionaries)
+# print(dictionaries)
 
 # # 10. Tenth task Access values
 
-dictionaries = {"name": "John",
-                  "age": 30,
-                  "city": "New Your",
-                  "email": "john@example.com"}
+# dictionaries = {"name": "John",
+#                   "age": 30,
+#                   "city": "New Your",
+#                   "email": "john@example.com"}
+
+# new_el = dictionaries.get('country')
+# if new_el == None:
+#     print('The key is not exist in the Dictionaries')
+# else:
+#     print('The key exist in the Dictionaries')    
 
 # # 11. Eleventh task Dictionary comprehension 
 
