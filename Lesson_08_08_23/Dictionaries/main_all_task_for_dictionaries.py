@@ -1,211 +1,218 @@
-# # All task for Dictionaries
+# All task for Dictionaries
 
-# # 01. First task Create an empty dictionary
+# 01. First task Create an empty dictionary
 
-# dictionaries = {}
-# dictionaries['name'] = 'John'
-# dictionaries['age'] = 35
-# dictionaries['city'] = 'New York'
-# dictionaries['email'] = 'john@example.com'
-# print dictionaries)
+dictionaries = {}
+dictionaries['name'] = 'John'
+dictionaries['age'] = 35
+dictionaries['city'] = 'New York'
+dictionaries['email'] = 'john@example.com'
+print (dictionaries)
 
-# # 2. Second task Access values
+# 2. Second task Access values
 
-# dictionaries = {'name': 'John', 'age': 35, 'city': 'New York', 'email': 'john@example.com'}
+dictionaries = {"name": "John",
+                "age": 30,
+                "city": "New Your",
+                "email": "john@example.com"}
 
-# dictionaries = dictionaries['name']
-# dict2 = dictionaries['email']
-
-# print(f'name: {dictionaries}')
-# print(f'email: {dict2}')
+dictionaries = dictionaries['name']
+dict2 = dictionaries['email']
+print(f'name: {dictionaries}')
+print(f'email: {dict2}')
            
-# # 3. Third task Check if a key exists
+# 3. Third task Check if a key exists
 
-# dictionaries = {"name": "John",
-#                 "age": 30,
-#                 "city": "New Your",
-#                 "email": "john@example.com"}
-# # 3.1 First options
-# def check_dict(key):
-#     if key in dictionaries:
-#         print(key)
-#     else:
-#         print(f'this {key} is not exist!') 
+dictionaries = {"name": "John",
+                "age": 30,
+                "city": "New Your",
+                "email": "john@example.com"}
+# 3.1 First options
+def check_dict(key):
+    if key in dictionaries:
+        print(key)
+    else:
+        print(f'this {key} is not exist!') 
         
-# for key, value in dictionaries.items():
-#     print(f'{key}: {value}')          
-# check_dict("country")                 
-# # 3.2 Second options
-# var = "age" in dictionaries
-# if var:
-#     print("age is present")
-# else:
-#     print("age is not present") 
+for key, value in dictionaries.items():
+    print(f'{key}: {value}')          
+check_dict("country")                 
+# 3.2 Second options
+var = "age" in dictionaries
+if var:
+    print("age is present")
+else:
+    print("age is not present") 
     
-# # 4. Fourth task Iterate over the dictionary
+# 4. Fourth task Iterate over the dictionary
 
-# dictionaries = {"name": "John",
-#                 "age": 30,
-#                 "city": "New Your",
-#                 "email": "john@example.com"}
-# # 4.1 First options
-# def check_dict(key):
-#     if key in dictionaries:
-#         print(key)
-#     else:
-#         print(f'this {key} is not exist!') 
+dictionaries = {"name": "John",
+                "age": 30,
+                "city": "New Your",
+                "email": "john@example.com"}
+# 4.1 First way
+def check_dict(key):
+    if key in dictionaries:
+        print(key)
+    else:
+        print(f'this {key} is not exist!') 
         
-# for key, value in dictionaries.items():
-#     print(f'{key}: {value}')
-# check_dict("country")                      
-# # 4.2 Second options
-# var = "age" in dictionaries
-# if var:
-#     print("age is present")
-# else:
-#     print("age is not present")     
-# for key, value in dictionaries.items():
-#     print(f'{key}: {value}')
-#     print(key, ':', value)
+for key, value in dictionaries.items():
+    print(f'{key}: {value}')
+check_dict("country") 
+                     
+# 4.2 Second way
+var = "age" in dictionaries
+if var:
+    print("age is present")
+else:
+    print("age is not present")     
+for key, value in dictionaries.items():
+    print(f'{key}: {value}')
+    print(key, ':', value)
          
-# # 5. Fifth task Get the number of key-value pairs
+# 5. Fifth task Get the number of key-value pairs
 
-# dictionaries = {"name": "John",
-#                 "age": 30,
-#                 "city": "New Your",
-#                 "email": "john@example.com"}
+dictionaries = {"name": "John",
+                "age": 30,
+                "city": "New Your",
+                "email": "john@example.com"}
 
-# for i in range(len(dictionaries)):
-#     print(f'List of dictionaries {i}')
-#     print('List of dictionaries', i )
+for i in range(len(dictionaries)):
+    print(f'List of dictionaries {i}')
+    print('List of dictionaries', i )
 
-# # 6. Sixth task Get a list of all keys
+# 6. Sixth task Get a list of all keys
 
-# dictionaries = {"name": "John",
-#                 "age": 30,
-#                 "city": "New Your",
-#                 "email": "john@example.com"}
+dictionaries = {"name": "John",
+                "age": 30,
+                "city": "New Your",
+                "email": "john@example.com"}
 
-# list_keys = list(dictionaries.keys())
-# # 6.1 First option for printing            
-# print(f'List of keys {list_keys}')           
-# # 6.2 Second option for printing            
-# print("List of values:", list_keys)    
+list_keys = list(dictionaries.keys())
 
+# 6.1 First way for printing            
+print(f'List of keys {list_keys}') 
+          
+# 6.2 Second way for printing            
+print("List of values:", list_keys)    
 
-# # 7. Seven task Get a list of all values
+# 7. Seven task Get a list of all values
 
-# dictionaries = {"name": "John",
-#                 "age": 30,
-#                 "city": "New Your",
-#                 "email": "john@example.com"}
+dictionaries = {"name": "John",
+                "age": 30,
+                "city": "New Your",
+                "email": "john@example.com"}
 
-# list_values = list(dictionaries.values()) 
-# # 7.1 First option for printing
-# print(f'List of values {list_values}')   
-# # 7.2 Second option for printing            
-# print("List of values:", list_values)                
+list_values = list(dictionaries.values()) 
 
-# # 8. Eighth task  Get a list of key-value pairs
+# 7.1 First way for printing
+print(f'List of values {list_values}')   
 
-# dictionaries = {"name": "John",
-#                  "age": 30,
-#                  "city": "New Your",
-#                  "email": "john@example.com"}
+# 7.2 Second way for printing            
+print("List of values:", list_values)                
 
-# for key, value in dictionaries.items():
-#     print(f'{key}: {value}')
+# 8. Eighth task  Get a list of key-value pairs
 
-# # 9. Ninth task Update or add new key-value pairs
+dictionaries = {"name": "John",
+                 "age": 30,
+                 "city": "New Your",
+                 "email": "john@example.com"}
 
-# dictionaries = {"name": "John",
-#                   "age": 30,
-#                   "city": "New Your",
-#                   "email": "john@example.com"}
+for key, value in dictionaries.items():
+    print(f'{key}: {value}')
 
-# new_dictionaries = {"nickname": "Horse"}
-# dictionaries.update(new_dictionaries)
-# print(dictionaries)
+# 9. Ninth task Update or add new key-value pairs
 
-# # 10. Tenth task Access values
+dictionaries = {"name": "John",
+                  "age": 30,
+                  "city": "New Your",
+                  "email": "john@example.com"}
 
-# dictionaries = {"name": "John",
-#                   "age": 30,
-#                   "city": "New Your",
-#                   "email": "john@example.com"}
+new_dictionaries = {"nickname": "Horse"}
+dictionaries.update(new_dictionaries)
+print(dictionaries)
 
-# new_el = dictionaries.get('country')
-# if new_el == None:
-#     print('The key is not exist in the Dictionaries')
-# else:
-#     print('The key exist in the Dictionaries')    
+# 10. Tenth task Access values
 
-# # 11. Eleventh task Dictionary comprehension 
+dictionaries = {"name": "John",
+                  "age": 30,
+                  "city": "New Your",
+                  "email": "john@example.com"}
 
-# dictionaries = {'Alice': 85,
-#                 'Bob': 90,
-#                 'Charlie': 78,
-#                 'David': 92}
+new_el = dictionaries.get('country')
+if new_el == None:
+    print('The key is not exist in the Dictionaries')
+else:
+    print('The key exist in the Dictionaries')    
 
-# # 11.1 First option
-# dictionaries2 = {}
-# for k,v in dictionaries.items():
-#     dictionaries2[k] = v / 100
-# print(dictionaries2)    
-# # 11.2 Second option
-# dictionaries3 = {k: v / 100 for k,v in dictionaries.items()}
-# print(dictionaries3)
+# 11. Eleventh task Dictionary comprehension 
 
-# # 12. Twelve task Use the pop() 
+dictionaries = {'Alice': 85,
+                'Bob': 90,
+                'Charlie': 78,
+                'David': 92}
 
-# dictionaries = {'Alice': 85,
-#                 'Bob': 90,
-#                 'Charlie': 78,
-#                 'David': 92}
-# # remove the last one
-# dictionaries.pop()
-# print(dictionaries)
+# 11.1 First way
+dictionaries2 = {}
+for k,v in dictionaries.items():
+    dictionaries2[k] = v / 100
+print(dictionaries2)
+    
+# 11.2 Second way
+dictionaries3 = {k: v / 100 for k,v in dictionaries.items()}
+print(dictionaries3)
 
-# # 13. Thirteen task Use the popitem()
+# 12. Twelve task Use the pop() 
 
-# dictionaries = {'Alice': 85,
-#                 'Bob': 90,
-#                 'Charlie': 78,
-#                 'David': 92}
-# # remove the last one
-# dictionaries.popitem()
-# print(dictionaries)
+dictionaries = {'Alice': 85,
+                'Bob': 90,
+                'Charlie': 78,
+                'David': 92}
 
-# # 14. Fourteen task Use the clear()
+# Remove the last one key
+dictionaries.pop()
+print(dictionaries)
 
-# dictionaries = {'Alice': 85,
-#                 'Bob': 90,
-#                 'Charlie': 78,
-#                 'David': 92}
+# 13. Thirteen task Use the popitem()
 
-# dictionaries.clear()
-# print(dictionaries)
+dictionaries = {'Alice': 85,
+                'Bob': 90,
+                'Charlie': 78,
+                'David': 92}
+# Return the last one key
+new_dictionaries = dictionaries.popitem()
+print(new_dictionaries)
 
-# # 15. Fifteen task Use the copy()
+# 14. Fourteen task Use the clear()
 
-# dictionaries = {'Alice': 85,
-#                 'Bob': 90,
-#                 'Charlie': 78,
-#                 'David': 92}
+dictionaries = {'Alice': 85,
+                'Bob': 90,
+                'Charlie': 78,
+                'David': 92}
 
-# dictionaries_two = dictionaries.copy()
-# print(dictionaries_two)
+dictionaries.clear()
+print(dictionaries)
 
-# # 16. Sixteen task Use the update()
+# 15. Fifteen task Use the copy()
 
-# dictionaries_one = {'a': 1, 'b': 2, 'c': 3}
-# dictionaries_two = {'b': 4, 'd': 5, 'e': 6}
+dictionaries = {'Alice': 85,
+                'Bob': 90,
+                'Charlie': 78,
+                'David': 92}
 
-# dictionaries_one.update(dictionaries_two)
-# print(dictionaries_one)
+dictionaries_two = dictionaries.copy()
+print(dictionaries_two)
 
-# # 17. Seventeen task Use the dict()
+# 16. Sixteen task Use the update()
 
-# dictionaries = {('a', 1), ('b', 2), ('c', 3)}
-# result = dict(dictionaries)
-# print(result)
+dictionaries_one = {'a': 1, 'b': 2, 'c': 3}
+dictionaries_two = {'b': 4, 'd': 5, 'e': 6}
+dictionaries_one.update(dictionaries_two)
+print(dictionaries_one)
+
+# 17. Seventeen task Use the dict()
+
+dictionaries = {('a', 1), ('b', 2), ('c', 3)}
+result = dict(dictionaries)
+print(result)
