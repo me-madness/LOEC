@@ -108,7 +108,13 @@
 
 # # 8. Eighth task  Get a list of key-value pairs
 
-dictionaries = {}
+# dictionaries = {"name": "John",
+#                  "age": 30,
+#                  "city": "New Your",
+#                  "email": "john@example.com"}
+
+# for key, value in dictionaries.items():
+#     print(f'{key}: {value}')
 
 # # 9. Ninth task Update or add new key-value pairs
 
