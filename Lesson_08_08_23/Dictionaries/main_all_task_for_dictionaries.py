@@ -132,69 +132,70 @@ dictionaries = {"name": "John",
 
 # # 11. Eleventh task Dictionary comprehension 
 
-dictionaries = {'Alice': 85,
-                'Bob': 90,
-                'Charlie': 78,
-                'David': 92}
+# dictionaries = {'Alice': 85,
+#                 'Bob': 90,
+#                 'Charlie': 78,
+#                 'David': 92}
 
 # # 11.1 First option
-dictionaries2 = {}
-for k,v in dictionaries.items():
-    dictionaries2[k] = v / 100
-print(dictionaries2)    
+# dictionaries2 = {}
+# for k,v in dictionaries.items():
+#     dictionaries2[k] = v / 100
+# print(dictionaries2)    
 # # 11.2 Second option
-dictionaries3 = {k: v / 100 for k,v in dictionaries.items()}
-print(dictionaries3)
+# dictionaries3 = {k: v / 100 for k,v in dictionaries.items()}
+# print(dictionaries3)
 
 # # 12. Twelve task Use the pop() 
 
-dictionaries = {'Alice': 85,
-                'Bob': 90,
-                'Charlie': 78,
-                'David': 92}
-# remove the last one
-dictionaries.pop()
-print(dictionaries)
+# dictionaries = {'Alice': 85,
+#                 'Bob': 90,
+#                 'Charlie': 78,
+#                 'David': 92}
+# # remove the last one
+# dictionaries.pop()
+# print(dictionaries)
 
 # # 13. Thirteen task Use the popitem()
 
-dictionaries = {'Alice': 85,
-                'Bob': 90,
-                'Charlie': 78,
-                'David': 92}
-# remove the last one
-dictionaries.popitem()
-print(dictionaries)
+# dictionaries = {'Alice': 85,
+#                 'Bob': 90,
+#                 'Charlie': 78,
+#                 'David': 92}
+# # remove the last one
+# dictionaries.popitem()
+# print(dictionaries)
 
 # # 14. Fourteen task Use the clear()
 
-dictionaries = {'Alice': 85,
-                'Bob': 90,
-                'Charlie': 78,
-                'David': 92}
+# dictionaries = {'Alice': 85,
+#                 'Bob': 90,
+#                 'Charlie': 78,
+#                 'David': 92}
 
-dictionaries.clear()
-print(dictionaries)
+# dictionaries.clear()
+# print(dictionaries)
 
 # # 15. Fifteen task Use the copy()
 
-dictionaries = {'Alice': 85,
-                'Bob': 90,
-                'Charlie': 78,
-                'David': 92}
+# dictionaries = {'Alice': 85,
+#                 'Bob': 90,
+#                 'Charlie': 78,
+#                 'David': 92}
+
+# dictionaries_two = dictionaries.copy()
+# print(dictionaries_two)
 
 # # 16. Sixteen task Use the update()
 
-dictionaries_one = {'a': 1, 'b': 2, 'c': 3}
-dictionaries_two = {'b': 4, 'd': 5, 'e': 6}
-# # 16.1 First Way
-print(dictionaries_one + dictionaries_two)
-# # 16.2 Second Way
-dictionaries_three = dictionaries_one + dictionaries_two
-print(dictionaries_three)
+# dictionaries_one = {'a': 1, 'b': 2, 'c': 3}
+# dictionaries_two = {'b': 4, 'd': 5, 'e': 6}
+
+# dictionaries_one.update(dictionaries_two)
+# print(dictionaries_one)
 
 # # 17. Seventeen task Use the dict()
 
-dictionaries = {('a', 1), ('b', 2), ('c', 3)}
-result = dict(dictionaries)
-print(result)
+# dictionaries = {('a', 1), ('b', 2), ('c', 3)}
+# result = dict(dictionaries)
+# print(result)
